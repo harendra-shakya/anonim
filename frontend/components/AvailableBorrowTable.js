@@ -26,13 +26,14 @@ export default function AvailableBorrowTable({
             const signer = await provider.getSigner();
             const contractAddress = await contractAddresses["Anonim"][parseInt(chainId)][0];
             const contract = await new ethers.Contract(contractAddress, anonimAbi, signer);
+            const supplyInUsd = await contract.getTotalSupplyValue(account);
             const rows = [];
 
             tokenNames.forEach(async (tokenName, i) => {
-                const availableTokens = await contract.getMaxTokenBorrow(
-                    tokenAddresses[i],
-                    account
-                );
+                const availableTokens =
+                    supplyInUsd != 0
+                        ? await contract.getMaxTokenBorrow(tokenAddresses[i], account)
+                        : "0";
                 rows.push([
                     <Image src={`/${tokenName.toLowerCase()}.svg`} height="45" width="45" />,
                     tokenName.toUpperCase().toString(),
