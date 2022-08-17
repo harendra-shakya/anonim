@@ -1,4 +1,4 @@
-I built a lending and borrowing protocol like aave. The best thing is that I made it all by myself from 500 lines of solidity to frontend, it was even my first project that I made without any tutorial. I made it from scratch as I never used aave much but I researched about it and boom I made it.
+I built a lending and borrowing protocol like aave. This was my project that I made without tutorial. For building this first I researched about aave as I never used aave before, after understanding how it works I built this.
 
 [Live server](https://anonim-ten.vercel.app/)
 
