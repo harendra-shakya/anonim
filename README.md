@@ -1,3 +1,6 @@
+Note: The Live server will not work as I deployed this project on Rinkeby testnet which does not exists anymore. But you can see the [Demo](https://www.linkedin.com/posts/harendra-shakya-622649229_boom-i-made-it-i-build-a-lending-and-borrowing-activity-6950774885971304448-roVS?utm_source=linkedin_share&utm_medium=android_app).
+
+
 I built a lending and borrowing protocol like aave. This was my project that I made without tutorial. For building this first I researched about aave as I never used aave before, after understanding how it works I built this.
 
 [Live server](https://anonim-ten.vercel.app/)
